@@ -14,7 +14,12 @@ public class BibliotecaApp extends JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setIconImage(new ImageIcon("icono.png").getImage());
+        try {
+            ImageIcon icono = new ImageIcon(getClass().getResource("/icono.png"));
+            setIconImage(icono.getImage());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Error al cargar el icono: " + e.getMessage());
+        }
 
         // Panel principal
         JPanel mainPanel = new JPanel(new BorderLayout(10, 10));
