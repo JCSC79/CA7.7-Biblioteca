@@ -1,0 +1,9 @@
+# Ignorar archivos compilados de Java  
+bin/  
+*.class  
+
+# Ignorar archivos generados por VSCode  
+.settings/  
+.vscode/  
+.project  
+.classpath  
