@@ -14,22 +14,28 @@ Aplicación Java con interfaz gráfica Swing para gestionar materiales de una bi
 ## Ejecución  
 Para ejecutar la aplicación, sigue estos pasos:  
 
-1. **Compila el Código**:  
-2. **Ejecuta la Aplicación**:  
+1. **Compila el Código**: javac -d bin src/*.java 
+
+2. **Ejecuta la Aplicación**: java -cp bin BibliotecaApp
+
+
+## Cumplimiento de CA7.7: Jerarquía de Clases  
+### **Estructura de Clases**  
+![Diagrama UML de Clases](./docs/uml_clases.png) *Diagrama de la jerarquía de materiales*
+
+| Clase       | Atributos Heredados        | Atributos Específicos    | Métodos Sobrescritos      |
+|-------------|----------------------------|--------------------------|---------------------------|
+| `Material`  | `titulo`, `añoPublicacion` | -                        | `getTipo()`, `toString()` |
+| `Libro`     |                            | `autor` (String)         | `getTipo()`, `toString()` |
+| `Revista`   |                            | `editor` (String)        | `getTipo()`, `toString()` |
+| `DVD`       |                            | `director` (String)      | `getTipo()`, `toString()` |
+
 
 ## Funcionalidad  
 - **Interfaz Gráfica**: Diseño moderno con Swing, incluyendo un desplegable para el tipo de material.  
 - **Validación Básica**: Los campos se limpian automáticamente después de agregar un material.  
+- **Gestión de Materiales**: Uso de herencia para libros, revistas y DVDs.
 
 ## Contribuciones  
 Si deseas mejorar o expandir esta aplicación, puedes hacer un fork de este repositorio y enviar una solicitud de pull request con tus cambios.  
-
-## Licencia  
-Este proyecto está bajo la licencia [MIT](https://opensource.org/licenses/MIT).  
-
-## Contacto  
-Para más información o preguntas, puedes contactarme a través de [mi perfil en GitHub](https://github.com/tu-usuario).  
-
-## Historial de Cambios  
-- **Versión Inicial**: Primera versión funcional del proyecto.  
 
