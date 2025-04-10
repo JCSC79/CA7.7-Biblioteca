@@ -21,7 +21,7 @@ Para ejecutar la aplicación, sigue estos pasos:
 
 ## Cumplimiento de CA7.7: Jerarquía de Clases  
 ### **Estructura de Clases**  
-![Diagrama UML de Clases](./docs/uml_clases.png) *Diagrama de la jerarquía de materiales*
+*Diagrama de la jerarquía de materiales*
 
 | Clase       | Atributos Heredados        | Atributos Específicos    | Métodos Sobrescritos      |
 |-------------|----------------------------|--------------------------|---------------------------|
