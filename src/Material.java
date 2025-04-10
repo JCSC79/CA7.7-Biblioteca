@@ -11,6 +11,6 @@ public abstract class Material {
 
     @Override  
     public String toString() {  
-        return titulo + " (" + añoPublicacion + ")";  
+        return titulo + " - " + añoPublicacion;  
     }  
 }
